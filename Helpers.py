@@ -22,4 +22,8 @@ def saveUser(user):
 def searchPerName(name):
     if os.path.exists(name):
         with open(name, "r") as users:
-            
+            user=json.load(users)
+    else:
+        user = {}
+    return user
+
