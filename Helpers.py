@@ -37,7 +37,7 @@ def lerArquivo(arquivo):
     return users
 
 def searchPerName(name, arquivo):
-    if os.path.exists(name):
+    if os.path.exists(arquivo):
         with open(name, "r") as users:
             user=json.load(users)
     else:
